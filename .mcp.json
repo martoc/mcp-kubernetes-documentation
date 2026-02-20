@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "kubernetes-documentation": {
+      "command": "uv",
+      "args": ["run", "mcp-kubernetes-documentation"]
+    }
+  }
+}
