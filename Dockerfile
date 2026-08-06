@@ -26,6 +26,8 @@ RUN uv sync --locked --no-dev
 # Build the index at container build time
 RUN uv run --no-sync kubernetes-docs-index index
 
+EXPOSE 8000
+
 # Run the MCP server directly from the baked venv so no dependency
 # resolution happens on container start
 CMD ["/app/.venv/bin/mcp-kubernetes-documentation"]
